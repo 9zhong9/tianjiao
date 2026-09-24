@@ -1,0 +1,17 @@
+{
+  "name": "tianjiao-ai-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "宿舍日记：脚边的信任 — AI 对话原型",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
