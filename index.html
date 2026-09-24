@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宿舍日记：脚边的信任</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">PRIVATE PROTOTYPE · CONSENSUAL INTERACTION</p>
+        <h1>宿舍日记：脚边的信任</h1>
+        <p>和成年室友聊天、建立信任，并尊重每一次明确的同意。</p>
+      </div>
+      <button id="reset-btn" class="ghost-button" type="button">重置进度</button>
+    </header>
+
+    <section class="notice" aria-label="互动规则">
+      <strong>互动规则</strong>
+      <span>所有角色均为 20 岁成年人。角色可以随时拒绝、暂停或结束互动；睡眠或无法表达意愿时不发生任何接触。</span>
+    </section>
+
+    <div class="layout">
+      <aside class="characters-panel">
+        <h2>大学室友</h2>
+        <div id="character-list" class="character-list"></div>
+      </aside>
+
+      <section class="chat-panel">
+        <div id="character-header" class="character-header"></div>
+        <div id="chat-log" class="chat-log" aria-live="polite"></div>
+        <div id="choices" class="choices"></div>
+        <form id="chat-form" class="chat-form">
+          <label class="sr-only" for="message-input">输入消息</label>
+          <input id="message-input" autocomplete="off" maxlength="240" placeholder="输入你想说的话……" />
+          <button type="submit">发送</button>
+        </form>
+        <div class="action-row">
+          <button id="pause-btn" class="secondary-button" type="button">暂停互动</button>
+          <button id="end-btn" class="secondary-button" type="button">结束本次对话</button>
+        </div>
+      </section>
+
+      <aside class="status-panel">
+        <h2>关系状态</h2>
+        <div id="status-card"></div>
+        <div class="help-box">
+          <strong>玩法提示</strong>
+          <p>通过体贴、尊重边界的对话提升好感和信任。亲密互动必须在角色清醒并明确答应后才会解锁。</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
